@@ -6,5 +6,13 @@ module.exports = {
     title: `gatsby-starter-drupal`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-drupal`,
+      options: {
+        baseUrl: `https://live-contentacms.pantheonsite.io`,
+        apiBase: `api`
+      }
+    }
+  ],
 }
